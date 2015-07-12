@@ -1,4 +1,5 @@
 <h3>All Posts</h3>
-<%@posts.each do |post|%>
-  <%= post %>
-<%end%>
+<% @posts.each do |post| %>
+  <%= post.title %>
+  <%= post.message %>
+<% end %>
