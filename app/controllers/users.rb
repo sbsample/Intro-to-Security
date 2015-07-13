@@ -1,34 +1,36 @@
+
+get '/users' do
+  @users = User.all
+  erb :"users"
+end 
+
 get '/users/new' do
-  erb :"/users/sign_up"
+  erb :"sign_up"
 end
 
 get '/users/login' do
-  erb :"/users/sign_in"
+  erb :"login"
 end
 
-post '/users/' do
+post '/users' do
    user = User.new(params)
   if user.save
     login(user)
-    redirect "/users/#{user.id}"
+    redirect "/users"
   else
     redirect '/users/new'
   end
 end
 
 post '/users/login' do
-  user = User.find_by(username: params[:username])
+  user = User.find_by(user_name: params[:username])
   if user && user.password == params[:password]
     login(user)
-    redirect "/users/#{user.id}"
+    redirect "/users"
   else
-    redirect '/users/sign_in'
+    redirect '/sign_up'
   end
 end
 
-get '/users/:id' do
-  @user = User.where(id: params[:id]).first
 
-  erb :"/users/profile"
-end
 
