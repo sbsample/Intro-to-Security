@@ -5,9 +5,9 @@ get "/posts" do
 end
 
 post "/posts" do
-  @post = Post.new(params)
-  @post.save!
-  redirect "posts/#{@post.id}"
+  @post = Post.create(params)
+  
+  redirect "/posts"
 end
 
 get "/posts/new" do

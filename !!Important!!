@@ -1,0 +1,12 @@
+!!Important!!
+  Do not try any of the following attacks on an ordinary site. They WILL send you to jail.
+
+Welcome to Hackkit. It's just like Reddit. Well, except for the lack of misogynistic trolls.  It's also ok to break it the site without going to jail. 
+
+When you are succesful, please us the, bundle exec rake db:reset, command to rest the test site.
+
+There are several vectors included in this challenge. 
+
+1. Cross Site Scripting (XSS)
+2. Weak Params
+3. 

@@ -1,5 +1,7 @@
 <h3>All Posts</h3>
 <% @posts.each do |post| %>
+  <h4>Title</h4>
   <%= post.title %>
-  <%= post.message %>
+  <h4>Message</h4>
+  <%= post.message %><br><br>
 <% end %>
