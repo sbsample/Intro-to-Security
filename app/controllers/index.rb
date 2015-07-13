@@ -1,6 +1,7 @@
 get '/' do
+	@user = current_user
   erb :"index"
-  @current_user = current_user
+ 
  
 end
 

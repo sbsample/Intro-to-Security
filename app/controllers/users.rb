@@ -1,6 +1,7 @@
 
 get '/users' do
   @users = User.all
+
   erb :"users"
 end 
 
@@ -28,7 +29,7 @@ post '/users/login' do
     login(user)
     redirect "/users"
   else
-    redirect '/sign_up'
+    redirect '/users/login'
   end
 end
 

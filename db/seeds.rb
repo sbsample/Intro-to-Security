@@ -5,8 +5,6 @@ require 'Faker'
               last_name: Faker::Name.last_name,
               user_name: Faker::Lorem.words(1),
               password_hash: Faker::Lorem.characters(12),
-              street: Faker::Address.street_address,
-              city: Faker::Address.city,
-              state:Faker::Address.state,
-              zip: Faker::Address.zip  )
+              email:"blah@blah.com",
+              admin: false  )
 end
