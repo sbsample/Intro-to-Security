@@ -1,7 +1,7 @@
 
 get '/users' do
   @users = User.all
-
+  @user = current_user
   erb :"users"
 end 
 
@@ -24,7 +24,7 @@ post '/users' do
 end
 
 post '/users/login' do
-  user = User.find_by(user_name: params[:username])
+  user = User.find_by(user_name: params[:user_name])
   if user && user.password == params[:password]
     login(user)
     redirect "/users"

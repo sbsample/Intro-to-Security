@@ -1,4 +1,11 @@
 <h3>All Posts</h3>
+
+<h6>Search Posts</h6>
+<form id="search_form" action="/posts/search" method="post">
+<input type="text" name="message" ><br>
+<input type="submit"  value="Search"><br>
+</form>
+
 <% @posts.each do |post| %>
   <h4>Title</h4>
   <%= post.title %>
