@@ -19,7 +19,19 @@ get "/posts/new" do
   erb :'new_post'
 end
 
-get
+
+# ' or 1=1)#
+post "/posts/search" do
+	connection = ActiveRecord::Base.connection
+ 	connection.execute("SELECT * FROM POSTS WHERE MESSAGE LIKE '%#{params[:search]}%';")
+ 	# p query
+ 	# redirect "/posts/search/#{query}"
+end
+
+# get "/posts/search/:results" do
+# @results = params[:results]
+# erb :"search"
+# end
 
 
  # connection = ActiveRecord::Base.connection

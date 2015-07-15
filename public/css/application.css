@@ -1,3 +1,8 @@
+body {
+	width:100%;
+	height:100%;
+}
+
 .navbar {
 	display: inline;
 }
@@ -15,7 +20,9 @@
 }
 
 #safe {
-	background-image: url("/img/safe.jpg"); 
-	width: 100%;
-	height: 20%;
+	background-image: url("/img/Safe.jpg"); 
+	margin: auto;
+	background-size: cover;
+	
+	height: 450px;
 }

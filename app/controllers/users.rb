@@ -21,7 +21,7 @@ post '/users' do
   else
     redirect '/users/new'
   end
-end
+ end
 
 post '/users/login' do
   user = User.find_by(user_name: params[:user_name])
