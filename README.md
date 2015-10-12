@@ -7,7 +7,7 @@
 
 
 
-Welcome to Hackkit. It's just like Reddit. Well, except for the lack of misogynistic trolls.  It's also ok to break the site without going to jail. 
+Welcome to Crackkit. It's just like Reddit. Well, except for the lack of misogynistic trolls.  It's also ok to break the site without going to jail. 
 
 To start:
 
