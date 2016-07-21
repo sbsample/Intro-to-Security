@@ -1,9 +1,9 @@
 
-get '/users' do
-  @users = User.all
-  @user = current_user
-  erb :"users"
-end 
+# get '/users' do
+#   @users = User.all
+#   @user = current_user
+#   erb :"users"
+# end 
 
 get '/users/new' do
   erb :"sign_up"
@@ -33,5 +33,9 @@ post '/users/login' do
   end
 end
 
+get "/users/:id" do
+@user = User.find_by(id: params[:id])
 
+erb :'usertest'
+end
 

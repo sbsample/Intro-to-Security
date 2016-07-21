@@ -28,6 +28,15 @@ post "/posts/search" do
  	# redirect "/posts/search/#{query}"
 end
 
+
+get "/posts/:id" do
+@post = Post.find_by(id: params[:id])
+erb :'test'
+end 
+
+
+
+
 # get "/posts/search/:results" do
 # @results = params[:results]
 # erb :"search"

@@ -10,3 +10,7 @@ get '/logout' do
   redirect '/'
 end
 
+get '/test' do
+
+erb :"test"
+end

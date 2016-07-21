@@ -5,6 +5,9 @@ set :app_file, __FILE__
 
 # Remove built in Rack Protections
 require 'rack/protection' 
-use Rack::Protection, disable :protection
+
+configure do
+ set :protection, false
+end
 
 run Sinatra::Application
